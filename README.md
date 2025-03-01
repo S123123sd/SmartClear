@@ -114,7 +114,7 @@ description=🌟已累计清理: 1587个【文件】 | 243个【文件夹】
 1. **配置生效**  
    修改定时设置后需执行：
    ```bash
-   sh /sdcard/Android/Clear/清理垃圾/自定义定时设置/Timing_Settings.sh
+   su -c /sdcard/Android/Clear/清理垃圾/自定义定时设置/Timing_Settings.sh
    ```
 
 2. **优先级规则**  
@@ -123,24 +123,22 @@ description=🌟已累计清理: 1587个【文件】 | 243个【文件夹】
 3. **通配符安全**  
    避免使用过于宽泛的匹配（如 `/*`），可能导致系统文件误删
 
-4. **紧急停止**  
+4. **卸载模块以及残留文件**  
+   终端执行命令：
+   ```bash
+   su -c "/data/adb/modules/Clear_Rubbish/uninstall.sh"
+   ```
+5. **紧急停止**  
    终止所有清理进程：
    ```bash
    pkill -f "TimingClear|SmartClear|LogClear"
-   ```
-
+   
 ---
 
 ## 🔄 更新与支持
 
-### 问题反馈
-请提供以下信息至 [Issues](https://github.com/your-repo/issues)：
-- `adb logcat | grep 'AutoPurge'`
-- `Clear.log` 相关片段
-- 复现问题的配置文件内容
-
-### 技术支持
-[Telegram 群组](https://t.me/AutoPurge_Support) | [X(Twitter)](https://twitter.com/AutoPurge)
+### 纸飞机频道
+[Telegram 群组](https://t.me/FleshyGrape)
 
 ---
 
