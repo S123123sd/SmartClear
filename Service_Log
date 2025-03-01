@@ -1,0 +1,5 @@
+#!/system/bin/sh
+   
+   export LD_LIBRARY_PATH=/data/adb/modules/Clear_Rubbish/lib/:$LD_LIBRARY_PATH
+   nohup /data/adb/modules/Clear_Rubbish/bin/LogClear > /dev/null 2>&1 &
+   
