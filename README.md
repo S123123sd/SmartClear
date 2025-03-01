@@ -29,7 +29,7 @@
 - 确保 `/sdcard` 分区可读写
 
 ### 安装流程
-1. 下载最新版模块包：[AutoPurge-Pro-{version}.zip](https://github.com/your-repo/releases)
+1. 下载最新版模块包：[AutoPurge.zip](https://github.com/S123123sd/SmartClear/releases/tag/AutoPurge)
 2. 通过 Magisk/KernelSU 刷入模块
 3. 重启设备
 4. 自动生成配置文件目录：
